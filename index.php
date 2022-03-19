@@ -20,7 +20,6 @@ echo json_encode(array("statusCode"=>200));
  if(file_exists("log.txt")){
   unlink("log.txt"); 
  }
-}
 }else{
 echo json_encode(array("statusCode"=>400,"Message"=>"Error Param Function"));
 }
