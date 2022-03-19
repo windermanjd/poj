@@ -17,9 +17,7 @@ fwrite($myfile, md5(date("Y-m-d h:i:s")));
 fclose($myfile);
 echo json_encode(array("statusCode"=>200));
 }else if($_GET["api"]=="reset"){
- if(file_exists("log.txt")){
-  unlink("log.txt"); 
- }
+ echo "delete";
 }else{
 echo json_encode(array("statusCode"=>400,"Message"=>"Error Param Function"));
 }
